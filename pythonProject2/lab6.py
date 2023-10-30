@@ -13,20 +13,21 @@ def encode(password):
     return new_password
 
 
-while True:
-    print("Menu")
-    print("-------------")
-    print("1. Encode")
-    print("2. Decode")
-    print("3. Quit\n")
-    choice = int(input("Please choose an option: "))
-    if choice == 1:
-        password = str(input("Please enter your password to encode: "))
-        enc_pass = encode(password)
-        print("Your password has been encoded and stored!\n")
-    elif choice == 2:
-        print(f'The encoded pass word is {enc_pass}, and the original password is {password}.\n')
-    elif choice == 3:
-        quit()
-
+if __name__ == "__main__":
+    while True:
+        print("Menu")
+        print("-------------")
+        print("1. Encode")
+        print("2. Decode")
+        print("3. Quit\n")
+        choice = int(input("Please choose an option: "))
+        if choice == 1:
+            password = str(input("Please enter your password to encode: "))
+            enc_pass = encode(password)
+            print("Your password has been encoded and stored!\n")
+        elif choice == 2:
+            print(f'The encoded pass word is {enc_pass}, and the original password is {password}.\n')
+        elif choice == 3:
+            quit()
+git
 
